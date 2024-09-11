@@ -1,0 +1,130 @@
+/* 기본 스타일 */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* 레이아웃 스타일 */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #000;
+  height: 100px; /* 이미지 스타일 추가 */
+  color: #000; /* 이미지 스타일 추가 */
+}
+
+header .logo {
+  padding: 20px;
+}
+
+header .nav-bar {
+  display: flex;
+  align-items: center;
+}
+
+header .nav-bar a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+/* 컨텐츠 영역 스타일 */
+.container {
+  flex: 1;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 슬라이드쇼 스타일 */
+.slide-show {
+  height: 200px;
+  border: 1px solid #000;
+}
+
+/* About 영역 스타일 */
+.about {
+  height: 200px;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+/* Product 영역 스타일 */
+.product {
+  height: 200px;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+/* 사이드바 영역 스타일 */
+.sidebar {
+  width: 200px;
+  border: 1px solid #000;
+  padding: 20px;
+}
+
+.login-info {
+  height: 100px;
+  border: 1px solid #000;
+}
+
+/* 푸터 스타일 */
+footer {
+  height: 100px;
+  border: 1px solid #000;
+  color: #000;
+  text-align: center;
+}
+
+footer .contact {
+  padding: 20px;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+  header {
+    height: auto;
+  }
+
+  header .logo, header .nav-bar {
+    float: none;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
+
+/* 사이드바 스타일 */
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.content {
+  flex: 1;
+}
+
+.sidebar {
+  width: 200px;
+  border: 1px solid #000;
+  padding: 10px;
+}
