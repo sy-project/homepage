@@ -50,6 +50,40 @@ main {
 .slide-show {
   height: 200px;
   border: 1px solid #000;
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+.slide {
+  display: none;
+}
+.slide img {
+  width: 100%;
+}
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  padding: 10px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+
+/* 애니메이션 효과 */
+.fade {
+  animation: fadeEffect 1.5s;
+}
+@keyframes fadeEffect {
+  from { opacity: 0.4; } 
+  to { opacity: 1; }
 }
 
 /* About 영역 스타일 */

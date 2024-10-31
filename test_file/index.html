@@ -9,7 +9,7 @@
 <body>
   <header>
     <div class="logo">
-      Seoyyung
+      <strong>Seoyyung</strong>
     </div>
     <div class="nav-bar">
       <a href="#">About</a>
@@ -22,30 +22,40 @@
     <section class="container">
       <section class="content">
         <div class="slide-show">
-          개발중인거나 관련 뉴스같은것 이미지 슬라이드
+          <div class="slide fade">
+            <img src="image1.jpg" alt="1">
+          </div>
+          <div class="slide fade">
+            <img src="image2.jpg" alt="2">
+          </div>
+          <div class="slide fade">
+            <img src="image3.jpg" alt="3">
+          </div>
         </div>
+          <!-- 슬라이드 네비게이션 -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         <div class="about">
           <h2>About</h2>
-          클릭시 해당 페이지로 이동
+          -
         </div>
         <div class="product">
           <h2>Product</h2>
-          <p>가장 최신이 맨 앞에, 6개(가로3 세로2) 까지 미리보기,
-          클릭 시 해당 상품페이지로 이동, 더보기 클릭시
-          Product 페이지로 이동</p>
+          <p>-</p>
         </div>
       </section>
       <section class="sidebar">
         <div class="login-info">
-          로그인 정보
+          Login
         </div>
       </section>
     </section>
   </main>
   <footer>
     <div class="contact">
-      메일이나 그런 연락수단
+      e-mail: official@seoyyung.com
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
