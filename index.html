@@ -9,7 +9,7 @@
 <body>
   <header>
     <div class="logo">
-      Seoyyung
+      <strong>Seoyyung</strong>
     </div>
     <div class="nav-bar">
       <a href="#">About</a>
@@ -22,8 +22,19 @@
     <section class="container">
       <section class="content">
         <div class="slide-show">
-          -
+          <div class="slide fade">
+            <img src="image1.jpg" alt="1">
+          </div>
+          <div class="slide fade">
+            <img src="image2.jpg" alt="2">
+          </div>
+          <div class="slide fade">
+            <img src="image3.jpg" alt="3">
+          </div>
         </div>
+          <!-- 슬라이드 네비게이션 -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         <div class="about">
           <h2>About</h2>
           -
@@ -45,5 +56,6 @@
       e-mail: official@seoyyung.com
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
